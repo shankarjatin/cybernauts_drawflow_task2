@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Role Selection */
+#role-selection {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.drag-module {
+    padding: 10px;
+    margin: 5px 0;
+    background: #3498db;
+    text-align: center;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.drag-module:hover {
+    background: #2980b9;
+}
+
+/* Main Editor */
+#drawflow-container {
+    flex: 1;
+    padding: 20px;
+}
+
+#drawflow {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+/* Export Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2ecc71;
+}

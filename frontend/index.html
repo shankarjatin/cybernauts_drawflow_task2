@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Flow Builder</title>
+
+  <!-- Drawflow Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow/dist/drawflow.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Role Selection -->
+  <div id="role-selection">
+    <label>Select Role:</label>
+    <select id="userSelector">
+      <option value="admin">Admin</option>
+      <option value="support">Support</option>
+    </select>
+    <button id="fetchUserRole">Login</button>
+  </div>
+
+  <!-- Sidebar for Modules -->
+  <div id="sidebar">
+    <h2>Automation Modules</h2>
+    <div id="module-list"></div>
+    <hr>
+    <button id="saveFlowBtn">Save</button>
+    <button id="loadFlowBtn">Load</button>
+    <button id="exportJsonBtn">Export JSON</button>
+  </div>
+
+  <!-- Main Flow Editor -->
+  <div id="drawflow-container">
+    <h2>Flow Builder</h2>
+    <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+
+  <!-- Drawflow & Custom Scripts -->
+  <script src="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow/dist/drawflow.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
